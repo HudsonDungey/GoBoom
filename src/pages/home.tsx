@@ -9,8 +9,8 @@ import { Input } from "postcss";
 export const Page = () => {
   return (
     <div className="min-h-screen flex flex-col">
-<section className="relative w-full h-screen flex items-center justify-center text-center text-white">
-        <div className="absolute top-0 left-0 w-full h-full"></div>
+      <section className="relative w-full h-screen flex items-center justify-center text-center text-white">
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-80"></div>
         <video
           autoPlay
           loop
@@ -19,14 +19,14 @@ export const Page = () => {
         >
           <source src="/traffic.mp4" type="video/mp4" />
         </video>
-        <div className="relative z-10 p-5">
+        <div className="relative z-10 max-w-3xl p-6">
           <h2 className="text-base font-semibold tracking-wide uppercase text-gogateamber">Safety & Efficiency</h2>
-          <h1 className="text-5xl font-bold drop-shadow-lg pb-3 mt-2">
+          <h1 className="text-5xl font-bold drop-shadow-lg pb-6 mt-2">
             Your Traffic Control, Simplified and Portable
           </h1>
-          <h2 className="text-sm font-semibold tracking-wide uppercase text-white">
-            GoGate provides reliable, portable boom gates for traffic control, mining, and enhanced site <br/> safety. Discover more!
-          </h2>
+          <p className="text-sm font-medium tracking-wide text-white leading-relaxed">
+            GoGate is a partnership between Trev Robotics and Core Traffic Control. With over 15 years of industry experience, Core Traffic brings deep knowledge of traffic management, while Trev Robotics delivers cutting-edge automation. Together, we deliver reliable, portable boom gates designed to enhance site safety and streamline access control for construction, mining, and events.
+          </p>
           <a href="#solutions" className="mt-6 inline-block bg-gogateamber text-sm text-black px-6 py-3 rounded font-bold text-lg hover:bg-amber-600">
             Explore GoGate
           </a>
@@ -126,6 +126,15 @@ export const Page = () => {
             <input 
               type="text" 
               placeholder="Full Name" 
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gogateamber" 
+              required 
+            />
+            </div>
+            <div className="text-start font-semibold pb-4">
+            <h1 className="pb-1">Company</h1>
+            <input 
+              type="text" 
+              placeholder="Company Name" 
               className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gogateamber" 
               required 
             />
