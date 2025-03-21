@@ -22,7 +22,7 @@ export const Page = () => {
         <div className="relative z-10 max-w-3xl p-6">
           <h2 className="text-base font-semibold tracking-wide uppercase text-gogateamber">Safety & Efficiency</h2>
           <h1 className="text-5xl font-bold drop-shadow-lg pb-6 mt-2">
-            Your Traffic Control, Simplified and Portable
+            Your Traffic Control, Simplified and <span className="text-gogateamber">Portable</span>
           </h1>
           <p className="text-sm font-medium tracking-wide text-white leading-relaxed">
             GoGate is a partnership between Trev Robotics and Core Traffic Control. With over 15 years of industry experience, Core Traffic brings deep knowledge of traffic management, while Trev Robotics delivers cutting-edge automation. Together, we deliver reliable, portable boom gates designed to enhance site safety and streamline access control for construction, mining, and events.
@@ -44,7 +44,7 @@ export const Page = () => {
               { name: "Public Traffic Control", image: "/traffic.jpeg", icon: <FaTrafficLight /> },
               { name: "Events", image: "/events.jpeg", icon: <LuPartyPopper /> },
             ].map((solution) => (
-              <div key={solution.name} className="bg-white shadow-lg rounded-lg">
+              <div key={solution.name} className="bg-white shadow-lg mx-5 md:mx-0 rounded-lg">
                 <img src={solution.image} alt={solution.name} className="w-full h-48 object-cover rounded-md" />
                 <h3 className="text-xl font-semibold text-gray-800 p-4 flex flex-row justify-center items-center gap-x-4"><span className="text-gogateamber">{solution.icon}</span>{solution.name}</h3>
               </div>
@@ -55,7 +55,7 @@ export const Page = () => {
 
 
       {/* Core Values Section */}
-      <section className="py-20 bg-gray-100">
+      <section className="py-5 md:py-20 bg-gray-100">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-black mb-10">Our Core Values</h2>
           <div className="flex flex-wrap justify-center gap-6">
@@ -67,7 +67,7 @@ export const Page = () => {
               {title: "Reliability", info: "GoGate solutions work consistently in all conditions, ensuring uninterrupted access control."},
               {title: "Innovation", info: "We continuously improve our technology to offer the best in traffic and site management."},
             ].map((value) => (
-              <div key={value.title} className="bg-gray-200 px-6 py-4 rounded-lg text-lg font-semibold text-center">
+              <div key={value.title} className="bg-gray-200 mx-4 md:mx-0 px-6 py-4 rounded-lg text-lg font-semibold text-center">
                 <h3 className="text-xl text-gogateamber">{value.title}</h3>
                 <p className="text-gray-700 text-sm mt-2">{value.info}</p>
               </div>
@@ -80,7 +80,7 @@ export const Page = () => {
         <div className="w-full h-full bg-black bg-opacity-50 absolute top-0 left-0"></div>
         <div className="relative z-10 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
           {/* Left Section */}
-          <div className="text-white flex flex-col justify-center items-start">
+          <div className="text-white flex flex-col justify-center md:items-start">
             <h2 className="text-lg uppercase font-semibold text-gogateamber">Our Impact</h2>
             <h1 className="text-5xl font-bold mt-2">Proven Performance</h1>
             <p className="text-lg text-gray-300 mt-4">Delivering excellence across diverse project applications.</p>
@@ -111,12 +111,12 @@ export const Page = () => {
       </section>
 
 
-      <section className="py-20 bg-gray-100 grid grid-cols-2">
-         <div className="p-10 pl-20 flex flex-col items-start">
+      <section className="py-20 bg-gray-100 md:grid md:grid-cols-2">
+         <div className="p-10 md:pl-20 flex flex-col md:items-start">
           <h1 className="text-sm pb-3 flex flex-row gap-x-2 text-gogateamber justify-center items-center">
           <IoIosChatboxes /> LET'S TALK
           </h1>
-          <h1 className="text-5xl font-bold text-start pb-10">
+          <h1 className="text-5xl font-bold md:text-start pb-10">
             Want to improve your business with <span className="text-gogateamber">GoGates</span>?
           </h1>
             <div className="flex flex-col w-full pt-10">
@@ -159,7 +159,7 @@ export const Page = () => {
             </div>
             <button 
               type="submit" 
-              className="bg-gogateamber w-4/12 text-white font-bold py-3 px-6 rounded-sm hover:bg-amber-600 transition-all"
+              className="bg-gogateamber md:w-4/12 text-white font-bold py-3 px-6 rounded-sm hover:bg-amber-600 transition-all"
             >
               Submit
             </button>
@@ -167,7 +167,7 @@ export const Page = () => {
             </div>
          </div>
 
-         <div className="p-5 flex flex-col justify-between gap-y-6 py-12 h-full">
+         <div className="p-5 hidden md:flex flex-col justify-between gap-y-6 py-12 h-full">
           <div className="bg-white w-full p-6 flex flex-col justify-center items-center rounded-lg shadow-md flex-1">
             <h1 className="text-xl font-bold">Darwin, Northern Territory</h1>
             <p>123 Main St</p>
